@@ -57,8 +57,8 @@ MF3='rozwiedziony':'trapmf',[0.632835978835979 0.856935978835979 1.0488359788359
 Name='zatrudnienie'
 Range=[0 1]
 NumMFs=2
-MF1='nie_pracuje':'pimf',[-0.214 -0.107142857142857 0.504 0.506]
-MF2='pracuje':'pimf',[0.51 0.512 1.13624338624339 1.23]
+MF1='nie_pracuje':'pimf',[-0.214 -0.1071 0.499 0.5]
+MF2='pracuje':'pimf',[0.501 0.501 1.136 1.23]
 
 [Input7]
 Name='socjoekonomiczne_warunki_wychowania'
@@ -89,8 +89,8 @@ MF4='srednio':'trapmf',[0.4 0.5 0.77 0.9007]
 Name='cukrzyca'
 Range=[0 1]
 NumMFs=2
-MF1='nie_wystepuje':'trapmf',[-0.215 -0.093915343915344 0.501 0.505]
-MF2='wystepuje':'trapmf',[0.512645502645503 0.514645502645503 1.03835978835979 1.2326455026455]
+MF1='nie_wystepuje':'trapmf',[-0.214 -0.1071 0.499 0.5]
+MF2='wystepuje':'trapmf',[0.501 0.501 1.136 1.23]
 
 [Output1]
 Name='ryzyko_zawa�u'

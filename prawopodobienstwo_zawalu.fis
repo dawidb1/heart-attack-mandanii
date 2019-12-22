@@ -15,48 +15,48 @@ DefuzzMethod='centroid'
 Name='Ogólne_ryzyko_zawału'
 Range=[0 1]
 NumMFs=3
-MF1='mf1':'trimf',[-0.4 0 0.4]
-MF2='mf2':'trimf',[0.1 0.5 0.9]
-MF3='mf3':'trimf',[0.6 1 1.4]
+MF1='male':'zmf',[-0.04 0.6]
+MF2='srednie':'trimf',[0.1 0.5 0.9]
+MF3='duze':'smf',[0.449597883597884 0.769597883597884]
 
 [Input2]
 Name='Ból_w_klatce_piersiowej'
 Range=[0 1]
 NumMFs=3
-MF1='mf1':'trimf',[-0.4 0 0.4]
-MF2='mf2':'trimf',[0.1 0.5 0.9]
-MF3='mf3':'trimf',[0.6 1 1.4]
+MF1='brak':'trapmf',[-0.36 -0.04 0.237856592135698 0.36]
+MF2='lekki':'gbellmf',[0.2346 5.056 0.4906]
+MF3='duży':'trapmf',[0.503855050115651 0.825 1.04 1.36]
 
 [Input3]
 Name='Stresująca_sytuacja'
 Range=[0 1]
 NumMFs=3
-MF1='niskie':'trimf',[-0.4 0 0.4]
-MF2='�rednie':'trimf',[0.1 0.5 0.9]
-MF3='bardzo_duze':'trimf',[0.6 1 1.4]
+MF1='brak':'trapmf',[-0.36 -0.04 0.237856592135698 0.36]
+MF2='lekko':'gbellmf',[0.2346 5.056 0.4906]
+MF3='bardzo':'trapmf',[0.503855050115651 0.825 1.04 1.36]
 
 [Input4]
 Name='Ból_lub_odrętwienie_ramienia'
 Range=[0 1]
 NumMFs=3
-MF1='mf1':'trimf',[-0.4 0 0.4]
-MF2='mf2':'trimf',[0.1 0.5 0.9]
-MF3='mf3':'trimf',[0.6 1 1.4]
+MF1='brak':'trapmf',[-0.36 -0.04 0.237856592135698 0.36]
+MF2='lekki':'gbellmf',[0.2346 5.056 0.4906]
+MF3='duży':'trapmf',[0.503855050115651 0.825 1.04 1.36]
 
 [Input5]
 Name='Płytki_oddech'
 Range=[0 1]
 NumMFs=3
-MF1='mf1':'trimf',[-0.4 0 0.4]
-MF2='mf2':'trimf',[0.1 0.5 0.9]
-MF3='mf3':'trimf',[0.6 1 1.4]
+MF1='normalny':'trapmf',[-0.345350809560524 -0.0253508095605242 0.252549190439476 0.374649190439476]
+MF2='płytki':'gbellmf',[0.2346 5.056 0.4906]
+MF3='bardzo_płytki':'trapmf',[0.506939090208172 0.828084040092521 1.04308404009252 1.36308404009252]
 
 [Output1]
 Name='prawdopodobienstwo_zawa�u_serca_w_danej_chwili'
 Range=[0 1]
 NumMFs=3
-MF1='niskie':'trimf',[-0.4 0 0.4]
-MF2='�rednie':'trimf',[0.1 0.5 0.9]
-MF3='bardzo_du�e':'trimf',[0.6 1 1.4]
+MF1='niskie':'gbellmf',[0.351966075558982 3.13 2.08e-17]
+MF2='�rednie':'pimf',[0.06 0.38 0.577 0.916345412490362]
+MF3='bardzo_du�e':'gbellmf',[0.265232845026985 2.5 0.931]
 
 [Rules]

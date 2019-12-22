@@ -20,20 +20,20 @@ MF2='srednie':'trimf',[0.1 0.5 0.9]
 MF3='duze':'smf',[0.449597883597884 0.769597883597884]
 
 [Input2]
-Name='Ból_w_klatce_piersiowej'
-Range=[0 1]
-NumMFs=3
-MF1='brak':'trapmf',[-0.36 -0.04 0.237856592135698 0.36]
-MF2='lekki':'gbellmf',[0.2346 5.056 0.4906]
-MF3='duży':'trapmf',[0.503855050115651 0.825 1.04 1.36]
-
-[Input3]
 Name='Stresująca_sytuacja'
 Range=[0 1]
 NumMFs=3
 MF1='brak':'trapmf',[-0.36 -0.04 0.237856592135698 0.36]
 MF2='lekko':'gbellmf',[0.2346 5.056 0.4906]
 MF3='bardzo':'trapmf',[0.503855050115651 0.825 1.04 1.36]
+
+[Input3]
+Name='Ból_w_klatce_piersiowej'
+Range=[0 1]
+NumMFs=3
+MF1='brak':'trapmf',[-0.36 -0.04 0.237856592135698 0.36]
+MF2='lekki':'gbellmf',[0.2346 5.056 0.4906]
+MF3='duży':'trapmf',[0.503855050115651 0.825 1.04 1.36]
 
 [Input4]
 Name='Ból_lub_odrętwienie_ramienia'

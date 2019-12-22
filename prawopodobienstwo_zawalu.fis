@@ -2,7 +2,7 @@
 Name='prawopodobienstwo_zawalu'
 Type='mamdani'
 Version=2.0
-NumInputs=1
+NumInputs=5
 NumOutputs=1
 NumRules=0
 AndMethod='min'
@@ -12,19 +12,51 @@ AggMethod='max'
 DefuzzMethod='centroid'
 
 [Input1]
-Name='input1'
+Name='OgÃ³lne_ryzyko_zawaÅ‚u'
+Range=[0 1]
+NumMFs=3
+MF1='mf1':'trimf',[-0.4 0 0.4]
+MF2='mf2':'trimf',[0.1 0.5 0.9]
+MF3='mf3':'trimf',[0.6 1 1.4]
+
+[Input2]
+Name='BÃ³l_w_klatce_piersiowej'
+Range=[0 1]
+NumMFs=3
+MF1='mf1':'trimf',[-0.4 0 0.4]
+MF2='mf2':'trimf',[0.1 0.5 0.9]
+MF3='mf3':'trimf',[0.6 1 1.4]
+
+[Input3]
+Name='StresujÄ…ca_sytuacja'
 Range=[0 1]
 NumMFs=3
 MF1='niskie':'trimf',[-0.4 0 0.4]
-MF2='œrednie':'trimf',[0.1 0.5 0.9]
+MF2='ï¿½rednie':'trimf',[0.1 0.5 0.9]
 MF3='bardzo_duze':'trimf',[0.6 1 1.4]
 
+[Input4]
+Name='BÃ³l_lub_odrÄ™twienie_ramienia'
+Range=[0 1]
+NumMFs=3
+MF1='mf1':'trimf',[-0.4 0 0.4]
+MF2='mf2':'trimf',[0.1 0.5 0.9]
+MF3='mf3':'trimf',[0.6 1 1.4]
+
+[Input5]
+Name='PÅ‚ytki_oddech'
+Range=[0 1]
+NumMFs=3
+MF1='mf1':'trimf',[-0.4 0 0.4]
+MF2='mf2':'trimf',[0.1 0.5 0.9]
+MF3='mf3':'trimf',[0.6 1 1.4]
+
 [Output1]
-Name='prawdopodobienstwo_zawa³u_serca_w_danej_chwili'
+Name='prawdopodobienstwo_zawaï¿½u_serca_w_danej_chwili'
 Range=[0 1]
 NumMFs=3
 MF1='niskie':'trimf',[-0.4 0 0.4]
-MF2='œrednie':'trimf',[0.1 0.5 0.9]
-MF3='bardzo_du¿e':'trimf',[0.6 1 1.4]
+MF2='ï¿½rednie':'trimf',[0.1 0.5 0.9]
+MF3='bardzo_duï¿½e':'trimf',[0.6 1 1.4]
 
 [Rules]

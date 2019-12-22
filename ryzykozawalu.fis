@@ -15,8 +15,8 @@ DefuzzMethod='centroid'
 Name='plec'
 Range=[0 1]
 NumMFs=2
-MF1='me�czyzna':'pimf',[-0.199582010582011 -0.199582010582011 0.488417989417989 0.490417989417989]
-MF2='kobieta':'pimf',[0.502 0.504 1.12 1.63]
+MF1='mezczyzna':'pimf',[-0.197 -0.197 0.497 0.5]
+MF2='kobieta':'pimf',[0.5 0.504 1.12 1.63]
 
 [Input2]
 Name='palenie_tytoniu'

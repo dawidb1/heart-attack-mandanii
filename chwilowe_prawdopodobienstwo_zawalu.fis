@@ -1,10 +1,10 @@
 [System]
-Name='prawopodobienstwo_zawalu'
+Name='chwilowe_prawdopodobienstwo_zawalu'
 Type='mamdani'
 Version=2.0
 NumInputs=5
 NumOutputs=1
-NumRules=10
+NumRules=18
 AndMethod='min'
 OrMethod='max'
 ImpMethod='min'
@@ -15,49 +15,49 @@ DefuzzMethod='centroid'
 Name='Ogólne_ryzyko_zawału'
 Range=[0 1]
 NumMFs=3
-MF1='male':'zmf',[-0.04 0.6]
-MF2='srednie':'trimf',[0.1 0.5 0.9]
-MF3='duze':'smf',[0.449597883597884 0.769597883597884]
+MF1='male':'zmf',[-0.04 0.950269853508096]
+MF2='srednie':'trimf',[-0.00501156515034695 0.501 1]
+MF3='duze':'smf',[0.099845797995374 0.77]
 
 [Input2]
 Name='Stresująca_sytuacja'
 Range=[0 1]
 NumMFs=3
-MF1='brak':'trapmf',[-0.36 -0.04 0.237856592135698 0.36]
-MF2='lekko':'gbellmf',[0.2346 5.056 0.4906]
-MF3='bardzo':'trapmf',[0.503855050115651 0.825 1.04 1.36]
+MF1='brak':'gbellmf',[0.3129 4.889 0.1129]
+MF2='lekko':'gbellmf',[0.306609868928296 2.86 0.491]
+MF3='bardzo':'gbellmf',[0.4495 3.102 0.9123]
 
 [Input3]
 Name='Ból_w_klatce_piersiowej'
 Range=[0 1]
 NumMFs=3
-MF1='brak':'trapmf',[-0.36 -0.04 0.237856592135698 0.36]
-MF2='lekki':'gbellmf',[0.2346 5.056 0.4906]
-MF3='duży':'trapmf',[0.503855050115651 0.825 1.04 1.36]
+MF1='brak':'gbellmf',[0.3129 4.889 0.1129]
+MF2='lekki':'gbellmf',[0.306609868928296 2.86 0.491]
+MF3='duży':'gbellmf',[0.4495 3.102 0.9123]
 
 [Input4]
 Name='Ból_lub_odrętwienie_ramienia'
 Range=[0 1]
 NumMFs=3
-MF1='brak':'trapmf',[-0.36 -0.04 0.237856592135698 0.36]
-MF2='lekki':'gbellmf',[0.2346 5.056 0.4906]
-MF3='duży':'trapmf',[0.503855050115651 0.825 1.04 1.36]
+MF1='brak':'gbellmf',[0.3129 4.889 0.1129]
+MF2='lekki':'gbellmf',[0.306609868928296 2.86 0.491]
+MF3='duży':'gbellmf',[0.4495 3.102 0.9123]
 
 [Input5]
 Name='Płytki_oddech'
 Range=[0 1]
 NumMFs=3
-MF1='normalny':'trapmf',[-0.345350809560524 -0.0253508095605242 0.252549190439476 0.374649190439476]
-MF2='płytki':'gbellmf',[0.2346 5.056 0.4906]
-MF3='bardzo_płytki':'trapmf',[0.506939090208172 0.828084040092521 1.04308404009252 1.36308404009252]
+MF1='brak':'gbellmf',[0.3129 4.889 0.1129]
+MF2='lekko':'gbellmf',[0.306609868928296 2.86 0.491]
+MF3='bardzo':'gbellmf',[0.4495 3.102 0.9123]
 
 [Output1]
 Name='prawdopodobienstwo_zawa�u_serca_w_danej_chwili'
 Range=[0 1]
 NumMFs=3
-MF1='niskie':'gbellmf',[0.351966075558982 3.13 2.08e-17]
-MF2='�rednie':'pimf',[0.06 0.38 0.577 0.916345412490362]
-MF3='bardzo_du�e':'gbellmf',[0.265232845026985 2.5 0.931]
+MF1='brak':'gbellmf',[0.3129 4.889 0.1129]
+MF2='małe':'gbellmf',[0.306609868928296 2.86 0.491]
+MF3='duże':'gbellmf',[0.276 1.63288384329399 0.912]
 
 [Rules]
 3 1 1 1 1, 1 (1) : 1
@@ -65,8 +65,16 @@ MF3='bardzo_du�e':'gbellmf',[0.265232845026985 2.5 0.931]
 3 3 3 3 3, 3 (1) : 1
 3 -1 -1 -1 -1, 3 (1) : 1
 3 -1 0 -1 -1, 3 (1) : 1
--1 -1 -1 -1 -1, -1 (0.9) : 1
+-1 -1 -1 -1 -1, -1 (0.1) : 1
 1 2 2 2 2, 2 (0.9) : 1
 0 1 1 1 1, 1 (1) : 1
 1 2 3 2 2, 3 (0.9) : 1
 1 -1 3 -1 -1, 3 (0.9) : 1
+3 3 3 3 3, 3 (1) : 1
+1 -3 1 1 1, 1 (1) : 1
+1 2 1 1 1, 1 (1) : 1
+-1 -1 3 0 0, 2 (0.2) : 1
+-1 -1 3 -1 -1, 3 (0.7) : 1
+3 0 3 3 3, 3 (1) : 1
+3 0 2 2 2, 3 (1) : 1
+1 2 0 -1 0, 1 (1) : 1
